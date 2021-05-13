@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* The first line of every <p> element. */
+        p::first-line {
+            color: blue;
+            text-transform: uppercase;
+        }
+
+        ul li::marker {
+            color: red;
+            font-size: 1.5em;
+        }
+
+        .ribbon {
+            background-color: #5BC8F7;
+        }
+
+        .ribbon::after {
+            content: "het 2de gedeelte er anders uitziet.";
+            background-color: #FFBA10;
+            border-color: black;
+            border-style: dotted;
+        }
+
+        input[type=file]::file-selector-button {
+            border: 2px solid #6c5ce7;
+            padding: .2em .4em;
+            border-radius: .2em;
+            background-color: #a29bfe;
+            transition: 1s;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 1 <br>
+        Kun je enkele voorbeelden geven van pseudo-elementen (minimaal 4)? Beschrijf met je eigen
+        woorden wat deze pseudo-elementen inhouden.</h3>
+    <p>Dit is een voobeeld om te laten zien <br>
+        dat de eerste paragraaf regel er anders uitziet dan de 2de.</p>
+
+    <div>hier zijn de opsomtekens rood gekleurd en een tikkeltje groter dan standaard.</div>
+    <ul>
+        <li>Peaches</li>
+        <li>Apples</li>
+        <li>Plums</li>
+    </ul>
+    <br>
+    <span class="ribbon"> hier een voorbeeld van 1 regel waarbij</span>
+    <br><br>
+
+    <form>
+        <label for="fileUpload">Upload file</label>
+        <input type="file" id="fileUpload">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            left: 100px;
+            border-radius: 50%;
+        }
+
+        .circle:before {
+            position: absolute;
+            bottom: 50px;
+            left: -40px;
+            width: 100px;
+            height: 100px;
+            content: '';
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .circle:after {
+            position: absolute;
+            bottom: 50px;
+            left: 140px;
+            width: 100px;
+            height: 100px;
+            content: '';
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .circle-txt {
+            position: absolute;
+            bottom: 40%;
+            width: 100%;
+            text-align: center;
+            color: blanchedalmond;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 6 <br>
+        Hieronder vind je wederom een voorbeeld van het gebruik van een pseudo-element. Kun jij dit
+        namaken?</h3>
+
+
+
+    <div class="circle">
+        <div class="circle-txt">1</div>
+    </div>
+
+
+    <div class="cirkle">
+        <div class="cirkle-txt">2</div>
+    </div>
+
+
+    <div class="cirkle">
+        <div class="cirkle-txt">3</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .star-twelve {
+            background: #32557f;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            left: 50px;
+
+        }
+
+        .star-twelve::before,
+        .star-twelve::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 150px;
+            width: 150px;
+            background: #32557f;
+        }
+
+        .star-twelve::before {
+            transform: rotate(30deg);
+        }
+
+        .star-twelve::after {
+            transform: rotate(60deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 7 <br>
+        De laatste opdracht vergt wat creativiteit. Zie het onderstaande voorbeeld en maak het na.</h3>
+    <br><br>
+
+    <div class="star-twelve"></div>
+
+
+
+</body>
+
+</html>
