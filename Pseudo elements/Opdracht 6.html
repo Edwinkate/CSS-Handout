@@ -13,11 +13,13 @@
             width: 200px;
             height: 200px;
             background-color: black;
-            left: 100px;
             border-radius: 50%;
+            content: "";
+            display: inline-block;
+            margin-left: 100px;
         }
 
-        .circle:before {
+        .circle1 {
             position: absolute;
             bottom: 50px;
             left: -40px;
@@ -28,7 +30,7 @@
             background-color: black;
         }
 
-        .circle:after {
+        .circle2 {
             position: absolute;
             bottom: 50px;
             left: 140px;
@@ -47,6 +49,26 @@
             color: blanchedalmond;
             font-size: 40px;
         }
+
+        .dot1 {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 10px;
+            height: 10px;
+            border-radius: 25px;
+            background-color: white;
+        }
+
+        .dot2 {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            width: 10px;
+            height: 10px;
+            border-radius: 25px;
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -58,21 +80,32 @@
 
 
     <div class="circle">
-        <div class="circle-txt">1</div>
+        <span class="circle1">
+            <span class="dot1"></span>
+        </span>
+        <span class="circle2">
+            <span class="dot2"></span>
+        </span>
+        <span class="circle-txt">1</span>
     </div>
-
-
-    <div class="cirkle">
-        <div class="cirkle-txt">2</div>
+    <div class="circle">
+        <span class="circle1">
+            <span class="dot1"></span>
+        </span>
+        <span class="circle2">
+            <span class="dot2"></span>
+        </span>
+        <span class="circle-txt">2</span>
     </div>
-
-
-    <div class="cirkle">
-        <div class="cirkle-txt">3</div>
+    <div class="circle">
+        <span class="circle1">
+            <span class="dot1"></span>
+        </span>
+        <span class="circle2">
+            <span class="dot2"></span>
+        </span>
+        <span class="circle-txt">3</span>
     </div>
-
-
-
 
 </body>
 
