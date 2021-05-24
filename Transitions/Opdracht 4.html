@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            background-color: gray;
+            height: 455px;
+        }
+
+        .div {
+            display: flex;
+            position: absolute;
+            border: 1px solid black;
+            width: 100%;
+            height: 450px;
+            background-color: gray;
+        }
+
+        .div1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: 75px;
+            height: 75px;
+            position: relative;
+            border: solid black 2px;
+            margin-left: 50%;
+            margin-top: 14%;
+            color: black;
+            font-size: medium;
+            transition-duration: 5s;
+            transition-property: border height width font-size;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        .div1::after {
+            font: 800 40px system-ui;
+            content: counter(count);
+            animation: counter 5s linear infinite alternate;
+            counter-reset: count 0;
+        }
+
+        @keyframes counter {
+            0% {
+                counter-increment: count 0;
+            }
+
+            25% {
+                counter-increment: count 1;
+            }
+
+            50% {
+                counter-increment: count 2;
+            }
+
+            75% {
+                counter-increment: count 3;
+            }
+
+            100% {
+                counter-increment: count 4;
+            }
+        }
+
+        .p {
+            position: absolute;
+            margin-left: 65%;
+            margin-top: 14%;
+            color: white;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Opdracht 4 <br>
+        Je kunt op verschillende properties transitions aangeven. Zie hieronder een voorbeeld. Zoek
+        uit op welke properties de transitions zitten en maak het ongeveer hetzelfde na.</h3>
+
+    <div class="container">
+        <div class="div">
+            <div class="div1">
+                <p class="p">1</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: 50px auto;
+
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-flow: wrap;
+        }
+
+        .card {
+            width: 20%;
+            background: white;
+            border: 1px solid black;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 5px 5px;
+            text-align: center;
+        }
+
+        .card-body .btn {
+            display: block;
+            color: white;
+            text-align: center;
+            background: blue;
+            margin-top: 10px;
+            text-decoration: none;
+            padding: 10px 5px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background: red;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 9 <br>
+        Zie het onderstaande voorbeeld en maak het na met flexbox. Zorg voor een leuk effect als je
+        met de muis over de ‘play’ knop heen gaat. Optioneel: gebruik .gif bestanden als images voor
+        een levendig effect.</h3>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="card">
+                <div>
+                    <img src="QuickGraciousLadybird-max-1mb.gif" />
+                </div>
+                <div class="card-body">
+                    <h2>Super Mario Run</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum itaque, voluptatem
+                        repudiandae quasi exercitationem delectus ex </p>
+                    <a href="#" class="btn">Play Super Mario Run</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="/Flexbox/mario.gif" />
+                </div>
+                <div class="card-body">
+                    <h2>Mario Maker</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum itaque, voluptatem
+                        repudiandae
+                        quasi exercitationem delectus ex </p>
+                    <a href="#" class="btn">Play Mario Maker</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <img src="/Flexbox/giphy (1).gif" />
+                </div>
+                <div class="card-body">
+                    <h2>Super Mario 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum itaque, voluptatem
+                        repudiandae
+                        quasi exercitationem delectus ex</p>
+                    <a href="#" class="btn">Play Super Mario 3</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <img src="/Flexbox/example4.gif" />
+                </div>
+                <div class="card-body">
+                    <h2>Yoshi's Island</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptatum itaque, voluptatem
+                        repudiandae
+                        quasi exercitationem delectus ex </p>
+                    <a href="#" class="btn">Play Yoshi's Island</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
